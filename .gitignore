@@ -1,3 +1,5 @@
 *-debug.log
 *-error.log
 node_modules
+.jest-cache
+test-results
