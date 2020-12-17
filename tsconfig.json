@@ -1,16 +1,13 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "checkJs": true,
     "declaration": true,
-    "emitDeclarationOnly": true,
-    "outDir": "types",
+    "declarationMap": true,
+    "outDir": "lib",
     "module": "commonjs",
     "moduleResolution": "node",
-    "target": "ES2020",
-    "alwaysStrict": true,
-    "typeRoots": ["types", "node_modules/@types"]
+    "target": "es2020",
+    "sourceMap": true,
+    "strict": true
   },
-  "files": ["chai.js", "index.js", "jest.js", "globals.d.ts"],
-  "exclude": ["node_modules", "types", "__tests__"]
+  "include": ["src"]
 }

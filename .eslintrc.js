@@ -6,6 +6,7 @@ module.exports = {
 
   parser: '@typescript-eslint/parser',
   parserOptions: {
+    project: 'tsconfig.json',
     sourceType: 'module',
   },
 
@@ -18,7 +19,7 @@ module.exports = {
     expect: 'readonly',
   },
 
-  // ignorePatterns: 'types',
+  ignorePatterns: ['lib', '.eslintrc.js'],
 
   settings: {
     'import/resolver': {
@@ -36,4 +37,13 @@ module.exports = {
     'no-param-reassign': ['error', { props: false }],
     'no-underscore-dangle': 'off',
   },
+
+  overrides: [
+    {
+      files: ['src/chai.ts', './src/jest.ts'],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
+  ],
 };

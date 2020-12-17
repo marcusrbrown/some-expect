@@ -2,11 +2,11 @@
   "name": "some-expect",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
-  "types": "types/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "build:types": "tsc",
-    "watch:types": "npm run build:types -- --watch",
+    "build": "tsc",
+    "watch:build": "npm run build -- --watch",
     "test": "jest"
   },
   "keywords": [
@@ -17,6 +17,9 @@
   ],
   "author": "",
   "license": "MIT",
+  "files": [
+    "lib"
+  ],
   "jest": {
     "preset": "amex-jest-preset"
   },
@@ -35,5 +38,17 @@
     "prettier": "^2.2.1",
     "typescript": "^4.1.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "peerDependencies": {
+    "chai": "*",
+    "expect": ">=23"
+  },
+  "peerDependenciesMeta": {
+    "chai": {
+      "optional": true
+    },
+    "expect": {
+      "optional": true
+    }
+  }
 }
