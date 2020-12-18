@@ -3,4 +3,5 @@
 node_modules
 .jest-cache
 test-results
+.type-coverage
 lib
