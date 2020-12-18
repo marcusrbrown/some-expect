@@ -1,10 +1,18 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: ['amex/prettier', 'plugin:import/typescript'],
+  extends: [
+    'amex',
+    'airbnb-typescript',
+    'plugin:import/typescript',
+    'prettier',
+    'plugin:prettier/recommended',
+    'prettier/react',
+    'prettier/unicorn',
+    'prettier/@typescript-eslint',
+  ],
 
-  plugins: ['@typescript-eslint'],
+  plugins: ['prettier'],
 
-  parser: '@typescript-eslint/parser',
   parserOptions: {
     project: 'tsconfig.json',
     sourceType: 'module',
@@ -36,14 +44,5 @@ module.exports = {
     'no-empty': ['error', { allowEmptyCatch: true }],
     'no-param-reassign': ['error', { props: false }],
     'no-underscore-dangle': 'off',
-  },
-
-  overrides: [
-    {
-      files: ['src/chai.ts', './src/jest.ts'],
-      rules: {
-        'import/no-extraneous-dependencies': 'off',
-      },
-    },
-  ],
+  },s
 };

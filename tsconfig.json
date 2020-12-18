@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "declaration": true,
     "declarationMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "outDir": "lib",
     "module": "commonjs",
     "moduleResolution": "node",

@@ -1,7 +1,7 @@
 const tryRequireExpect = () => {
   try {
     return require('expect');
-  } catch (_: any) {
+  } catch (_) {
     return undefined;
   }
 };
