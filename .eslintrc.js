@@ -1,16 +1,6 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: [
-    'airbnb-typescript',
-    'plugin:import/typescript',
-    'prettier',
-    'plugin:prettier/recommended',
-    'prettier/react',
-    'prettier/unicorn',
-    'prettier/@typescript-eslint',
-  ],
-
-  plugins: ['prettier'],
+  extends: ['airbnb-typescript', 'plugin:import/typescript', 'prettier'],
 
   parserOptions: {
     project: 'tsconfig.json',
