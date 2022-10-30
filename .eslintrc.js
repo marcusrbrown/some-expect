@@ -1,7 +1,6 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   extends: [
-    'amex',
     'airbnb-typescript',
     'plugin:import/typescript',
     'prettier',
@@ -44,5 +43,5 @@ module.exports = {
     'no-empty': ['error', { allowEmptyCatch: true }],
     'no-param-reassign': ['error', { props: false }],
     'no-underscore-dangle': 'off',
-  },s
+  },
 };
