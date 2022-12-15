@@ -8,7 +8,7 @@
     "build": "tsc",
     "postbuild": "type-coverage",
     "watch:build": "npm run build -- --watch",
-    "test": "jest",
+    "test": "jest --coverage --passWithNoTests",
     "prepare": "npm run build"
   },
   "keywords": [
