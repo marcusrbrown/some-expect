@@ -1,0 +1,6 @@
+.jest-cache
+.type-coverage
+lib
+node_modules
+package-lock.json
+test-results

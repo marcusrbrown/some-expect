@@ -8,6 +8,8 @@
     "build": "tsc",
     "postbuild": "type-coverage",
     "watch:build": "npm run build -- --watch",
+    "check-format": "prettier --check .",
+    "format": "prettier --write .",
     "test": "jest --coverage --passWithNoTests",
     "prepare": "npm run build"
   },
