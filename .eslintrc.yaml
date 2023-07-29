@@ -1,0 +1,27 @@
+extends: ['airbnb-base', 'airbnb-typescript/base', 'plugin:import/typescript', 'prettier']
+
+parserOptions:
+  project: 'tsconfig.json'
+  sourceType: 'module'
+
+env:
+  node: true
+
+globals:
+  chai: 'readonly'
+  expect: 'readonly'
+
+ignorePatterns: ['lib', 'coverage']
+
+settings:
+  'import/resolver':
+    typescript:
+      alwaysTryTypes: true,
+      project: 'tsconfig.json'
+
+rules:
+  'global-require': 'off'
+
+  'no-empty': ['error', { allowEmptyCatch: true }]
+  'no-param-reassign': ['error', { props: false }]
+  'no-underscore-dangle': 'off'
