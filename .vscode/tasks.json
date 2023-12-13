@@ -7,7 +7,7 @@
             "problemMatcher": ["$tsc-watch"],
             "group": "build",
             "label": "npm: watch:build",
-            "detail": "npm run build -- --watch",
+            "detail": "pnpm run build -- --watch",
             "isBackground": true
         }
     ]

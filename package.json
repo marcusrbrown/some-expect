@@ -1,18 +1,19 @@
 {
   "name": "some-expect",
   "version": "0.0.0",
+  "packageManager": "pnpm@8.12.0",
   "description": "Use some expect() function from a supported testing library.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "postbuild": "type-coverage",
-    "watch:build": "npm run build -- --watch",
+    "watch:build": "pnpm run build -- --watch",
     "check-format": "prettier --check .",
     "format": "prettier --write .",
     "lint": "eslint .",
     "test": "jest --coverage --passWithNoTests",
-    "prepare": "npm run build"
+    "prepare": "pnpm run build"
   },
   "keywords": [
     "expect",

@@ -1,4 +1,10 @@
-extends: ['airbnb-base', 'airbnb-typescript/base', 'plugin:import/typescript', 'prettier']
+extends:
+  [
+    'airbnb-base',
+    'airbnb-typescript/base',
+    'plugin:import/typescript',
+    'prettier',
+  ]
 
 parserOptions:
   project: 'tsconfig.json'
@@ -22,6 +28,6 @@ settings:
 rules:
   'global-require': 'off'
 
-  'no-empty': ['error', { allowEmptyCatch: true }]
-  'no-param-reassign': ['error', { props: false }]
+  'no-empty': ['error', {allowEmptyCatch: true}]
+  'no-param-reassign': ['error', {props: false}]
   'no-underscore-dangle': 'off'
