@@ -1,0 +1,14 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: ['github>marcusrbrown/renovate-config#v1.11.1'],
+  packageRules: [
+    {
+      matchFileNames: ['**/renovate.json5'],
+      branchTopic: 'reconfigure',
+    },
+  ],
+  postUpgradeTasks: {
+    commands: ['pnpm install --frozen-lockfile --ignore-scripts', 'pnpm run format', 'git checkout -- .npmrc'],
+    executionMode: 'branch',
+  },
+}
