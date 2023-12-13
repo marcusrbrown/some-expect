@@ -8,7 +8,11 @@
     },
   ],
   postUpgradeTasks: {
-    commands: ['pnpm install --frozen-lockfile --ignore-scripts', 'pnpm run format', 'git checkout -- .npmrc'],
+    commands: [
+      'pnpm install --frozen-lockfile --ignore-scripts',
+      'pnpm run format',
+      'git checkout -- .npmrc',
+    ],
     executionMode: 'branch',
   },
 }
