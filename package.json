@@ -1,7 +1,7 @@
 {
   "name": "some-expect",
   "version": "0.0.0",
-  "packageManager": "pnpm@8.15.0",
+  "packageManager": "pnpm@8.15.1",
   "description": "Use some expect() function from a supported testing library.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
