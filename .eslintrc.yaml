@@ -1,14 +1,11 @@
 extends:
-  - 'airbnb-base'
-  - 'airbnb-typescript/base'
+  - 'eslint:recommended'
+  - 'plugin:@typescript-eslint/recommended'
   - 'plugin:import/typescript'
   - 'prettier'
 
-parserOptions:
-  project: 'tsconfig.json'
-  sourceType: 'module'
-
 env:
+  es6: true
   node: true
 
 globals:
@@ -16,6 +13,15 @@ globals:
   expect: 'readonly'
 
 ignorePatterns: ['lib', 'coverage']
+
+parser: '@typescript-eslint/parser'
+
+parserOptions:
+  project: 'tsconfig.json'
+  sourceType: 'module'
+
+plugins:
+  - '@typescript-eslint'
 
 settings:
   'import/resolver':
