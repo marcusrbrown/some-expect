@@ -1,10 +1,8 @@
 extends:
-  [
-    'airbnb-base',
-    'airbnb-typescript/base',
-    'plugin:import/typescript',
-    'prettier',
-  ]
+  - 'airbnb-base'
+  - 'airbnb-typescript/base'
+  - 'plugin:import/typescript'
+  - 'prettier'
 
 parserOptions:
   project: 'tsconfig.json'
