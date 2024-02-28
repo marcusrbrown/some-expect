@@ -1,6 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const {chaiExpect} = require('./chai');
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const {jestExpect} = require('./jest');
+export * from './chai';
+export * from './jest';
 
 module.exports = function expect() {};
