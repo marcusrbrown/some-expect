@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@types/chai':
-    specifier: 4.3.15
-    version: 4.3.15
+    specifier: 4.3.16
+    version: 4.3.16
   '@types/jest':
     specifier: 29.5.12
     version: 29.5.12
@@ -777,8 +777,8 @@ packages:
       '@babel/types': 7.24.0
     dev: true
 
-  /@types/chai@4.3.15:
-    resolution: {integrity: sha512-PYVSvyeZqy9++MoSegq88PxoPndWDDLGbJmE/OZnzUk3D4cCRTmA4N6EX3g0GgLVA+vtys7bj4luhkVCglGTkQ==}
+  /@types/chai@4.3.16:
+    resolution: {integrity: sha512-PatH4iOdyh3MyWtmHVFXLWCCIhUbopaltqddG9BzB+gMIzee2MJrvd+jouii9Z3wzQJruGWAm7WOMjgfG8hQlQ==}
     dev: true
 
   /@types/graceful-fs@4.1.9:
