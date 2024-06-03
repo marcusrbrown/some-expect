@@ -1287,7 +1287,7 @@ packages:
     dependencies:
       assertion-error: 2.0.1
       check-error: 2.1.1
-      deep-eql: 5.0.1
+      deep-eql: 5.0.2
       loupe: 3.1.1
       pathval: 2.0.0
     dev: true
@@ -1466,8 +1466,8 @@ packages:
         optional: true
     dev: true
 
-  /deep-eql@5.0.1:
-    resolution: {integrity: sha512-nwQCf6ne2gez3o1MxWifqkciwt0zhl0LO1/UwVu4uMBuPmflWM4oQ70XMqHqnBJA+nhzncaqL9HVL6KkHJ28lw==}
+  /deep-eql@5.0.2:
+    resolution: {integrity: sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q==}
     engines: {node: '>=6'}
     dev: true
 
