@@ -30,7 +30,7 @@
     "preset": "amex-jest-preset"
   },
   "devDependencies": {
-    "@types/chai": "4.3.16",
+    "@types/chai": "4.3.20",
     "@types/jest": "29.5.12",
     "@types/node": "20.16.1",
     "@typescript-eslint/eslint-plugin": "7.18.0",
