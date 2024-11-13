@@ -3,7 +3,7 @@
   extends: ['github>marcusrbrown/renovate-config', 'github>marcusrbrown/renovate-config:personal'],
   postUpgradeTasks: {
     commands: [
-      'npm install -g pnpm@9.12.3',
+      'npm install -g pnpm@9.13.0',
       'pnpm install --frozen-lockfile --ignore-scripts',
       'pnpm run format',
       'git checkout -- .npmrc',
