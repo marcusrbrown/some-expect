@@ -1,13 +1,9 @@
 {
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
-  extends: ['github>marcusrbrown/renovate-config', 'github>marcusrbrown/renovate-config:personal'],
+  extends: ['github>marcusrbrown/renovate-config'],
+  automergeType: 'pr',
   postUpgradeTasks: {
-    commands: [
-      'npm install -g pnpm@9.14.2',
-      'pnpm install --frozen-lockfile --ignore-scripts',
-      'pnpm run format',
-      'git checkout -- .npmrc',
-    ],
+    commands: ['pnpm bootstrap', 'pnpm build', 'pnpm format'],
     executionMode: 'branch',
   },
 }
