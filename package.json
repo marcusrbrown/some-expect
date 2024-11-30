@@ -60,7 +60,7 @@
     }
   },
   "typeCoverage": {
-    "atLeast": 86.2,
+    "atLeast": 92,
     "cache": true,
     "detail": true,
     "ignoreCatch": true,
