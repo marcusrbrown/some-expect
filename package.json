@@ -6,7 +6,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "bootstrap": "pnpm install --prefer-frozen-lockfile --ignore-scripts --prefer-offline --loglevel error",
+    "bootstrap": "pnpm install --prefer-offline --loglevel error",
     "build": "tsc",
     "postbuild": "type-coverage",
     "watch:build": "pnpm run build -- --watch",
