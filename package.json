@@ -31,13 +31,13 @@
     "preset": "amex-jest-preset"
   },
   "devDependencies": {
-    "@types/chai": "4.3.20",
+    "@types/chai": "5.2.2",
     "@types/jest": "29.5.14",
     "@types/node": "22.15.3",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "amex-jest-preset": "7.0.0",
-    "chai": "5.1.1",
+    "chai": "5.2.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "10.1.2",
     "eslint-import-resolver-typescript": "4.3.4",
